@@ -1,3 +1,39 @@
 .page-footer{
-	
+	background: $default-site-color;
+	padding: 26px 0;
+	color: #fff;
+}
+
+.page-footer__wrap{
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+.socials{
+	display: flex;
+	align-items:center;
+}
+
+.socials__item{
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	margin-right: 16px;
+	background: #3f729e;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.socials__item--youtube{
+
+}
+.socials__item--vk{
+
+}
+.socials__item--fb{
+
+}
+.socials__item--twitter{
+
 }

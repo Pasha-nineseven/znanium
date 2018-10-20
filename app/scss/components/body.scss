@@ -38,13 +38,18 @@ textarea,input {
 }
 
 a{
+	color: #337ab7;
+	text-decoration: none;
 	transition: color 0.3s linear;
+	&:hover{
+		
+	}
 }
 
 body {
 	margin: 0;
 	height: 100%;
-	background: $default-site-color;
+	background: $default-bg;
 	-webkit-font-smoothing: antialiased;
 	font-size: $default-size-font;
 	font-family: $default-font;

@@ -1,4 +1,55 @@
 .page-header{
-
+	background: $default-site-color;
+	padding: 16px 0 13px;
+	color: #fff;
 }
 
+.page-header__wrap{
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.top-menu{
+	display: flex;
+	align-items:center;
+	margin-right: 86px;
+}
+
+.top-menu__item{
+	color: #fff;
+	margin-right: 33px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.page-header__search{
+	margin-right: 67px;
+}
+
+.search-link{
+	width: 29px;
+	height: 29px;
+	background: url(../img/content/search.png) no-repeat;
+	display: block;
+}
+
+.page-header__content{
+	display: flex;
+	align-items:center;
+}
+
+.cart-link{
+	display: inline-block;
+	width: 26px;
+	height: 32px;
+	background: url(../img/svg/cart.svg) no-repeat;
+	margin-top: -1px;
+}
+
+.entrance{
+	color: #fff;
+	margin-left: 63px;
+	display: inline-block;
+}
