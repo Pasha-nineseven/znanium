@@ -54,6 +54,12 @@ body {
 	font-size: $default-size-font;
 	font-family: $default-font;
 	color: $base-color;
+	&.noscroll{
+		overflow: hidden;
+	}
+	&.fixed{
+		overflow: hidden;
+	}
 }
 
 textarea,input {
