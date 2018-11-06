@@ -70,6 +70,16 @@
 	    margin: 25px auto 32px;
 	    max-width: 100%;
 	}
+	.book-offers {
+	    float: none;
+	    padding-left: 0;
+	    margin-top: 0;
+	    margin-bottom: 20px;
+	}
+	.book-chars__item {
+	    width: 100%;
+	    padding: 0;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -96,4 +106,5 @@
 	.page-footer__socials{
 		width: 100%;
 	}
+	
 }

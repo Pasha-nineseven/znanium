@@ -344,6 +344,10 @@
     display: block;
     padding: 0;
     text-indent: -9999em;
+    &:hover{
+      background: url(../img/svg/search-h.svg) no-repeat;
+      background-size: contain;
+    }
 }
 
 .search-form__input::-webkit-input-placeholder {color:#76a6d5;transition:all 0.3s ease;}

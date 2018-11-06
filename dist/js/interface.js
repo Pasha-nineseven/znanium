@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
 
+    //SIDEBAR-ACCORDEON
 	$("body").on("click", ".sidebar__link", function(e){
 		e.preventDefault();
 		$(this).toggleClass('active');
@@ -74,6 +75,28 @@ $(document).ready(function() {
         $('.search__bg').fadeOut();
         $('body').removeClass('fixed');
     });
+
+
+    //ACCORDEON
+    $("body").on("click", ".accordeon__toggle", function(e){
+        e.preventDefault();
+        //$(this).toggleClass('active');
+        $(this).parents('.accordeon__item').toggleClass('active').find('.accordeon__content').slideToggle();
+    });
+
+
+    //SHOW-CODE
+    $("body").on("click", ".js-enter-code__link", function(e){
+        e.preventDefault();
+        $(this).next('.enter-code__form').fadeIn();
+    });
+    $(document).click(function (e){
+        var div = $(".enter-code");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            $('.enter-code__form').fadeOut();
+        }
+    });
 });
 
 
@@ -91,16 +114,16 @@ $(window).resize(function () {
 
 
 // links pages
-// $('body').append(
-// 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
-// 		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
-// 	<style> \
-// 		#pages { padding: 10px 20px 0 50px; font-size: 18px; } \
-// 		#pages a { text-decoration: none; } \
-// 		#pages li { margin: 5px 0; } \
-// 	</style> \
-// 	<ol id="pages"> \
-// 		<li><a href="about.html">About</a></li> \
-// 		<li><a href="index.html">Index</a></li> \
-// 	</ol> \
-// </div>');
+$('body').append(
+	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
+		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
+	<style> \
+		#pages { padding: 10px 20px 0 50px; font-size: 18px; } \
+		#pages a { text-decoration: none; } \
+		#pages li { margin: 5px 0; } \
+	</style> \
+	<ol id="pages"> \
+		<li><a href="book.html">Книга</a></li> \
+		<li><a href="index.html">Текстовая</a></li> \
+	</ol> \
+</div>');
