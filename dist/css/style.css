@@ -3299,6 +3299,8 @@ a {
   text-decoration: none;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear; }
+  a:hover {
+    color: #f58220; }
 
 body {
   margin: 0;
@@ -3399,8 +3401,10 @@ textarea, input {
     transition: background 0.3s ease; }
   .top-menu__item:last-child {
     margin-right: 0; }
-  .top-menu__item:hover:after, .top-menu__item.active:after {
-    background: #f58220; }
+  .top-menu__item:hover, .top-menu__item.active {
+    color: #fff; }
+    .top-menu__item:hover:after, .top-menu__item.active:after {
+      background: #f58220; }
 
 .page-header__search {
   margin-right: 67px; }
@@ -3450,8 +3454,10 @@ textarea, input {
     bottom: -6px;
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease; }
-  .entrance:hover:after {
-    background: #f58220; }
+  .entrance:hover {
+    color: #fff; }
+    .entrance:hover:after {
+      background: #f58220; }
 
 .logo {
   -webkit-transition: all 0.3s ease;
@@ -3664,6 +3670,8 @@ textarea, input {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg); }
+  .search__close:hover:before, .search__close:hover:after {
+    background: #f58220; }
 
 .search__bg {
   position: fixed;
@@ -4024,6 +4032,8 @@ textarea, input {
       -webkit-transform: translateY(-50%) rotate(180deg);
           -ms-transform: translateY(-50%) rotate(180deg);
               transform: translateY(-50%) rotate(180deg); }
+  .sidebar__link:hover {
+    color: #000; }
 
 .sidebar-submenu {
   padding: 14px 39px;
@@ -4076,8 +4086,12 @@ textarea, input {
   width: 100px;
   height: 100px;
   background: url(../img/content/play.png) no-repeat;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
   display: block;
   margin: 0 auto 25px; }
+  .play__btn:hover {
+    background: url(../img/content/play-h.png) no-repeat; }
 
 .play__info {
   color: #fff;
@@ -4350,6 +4364,7 @@ textarea, input {
   transition: background 0.3s ease;
   font-size: 17px; }
   .book-offers__link:hover {
+    color: #fff;
     background: #5aa7e9; }
   .book-offers__link:active {
     background: #2f74b0; }
@@ -4781,4 +4796,40 @@ textarea, input {
     background-size: contain;
     margin: 0 auto; }
   .page-footer__socials {
-    width: 100%; } }
+    width: 100%; }
+  .logo {
+    width: 135px;
+    height: 27px; }
+  .book {
+    max-width: 100%; }
+  .book-offers {
+    width: 100%; }
+  .book__img {
+    width: auto;
+    display: inline-block; }
+  .copy-link {
+    display: none;
+    margin-left: 0; }
+  .accordeon__item.active .copy-link {
+    display: block; }
+  .enter-code__form {
+    left: 0;
+    top: 100%;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    margin-left: 0;
+    margin-top: 10px;
+    z-index: 2; }
+  .enter-code__form:before {
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent #ebedf0 transparent;
+    right: 50%;
+    top: auto;
+    bottom: 100%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  .accordeon__toggle:after {
+    width: 30px;
+    height: 30px; } }

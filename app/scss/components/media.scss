@@ -106,5 +106,45 @@
 	.page-footer__socials{
 		width: 100%;
 	}
-	
+	.logo {
+	    width: 135px;
+	    height: 27px;
+	}
+	.book {
+	    max-width: 100%;
+	}
+	.book-offers {
+	    width: 100%;
+	}
+	.book__img {
+	    width: auto;
+	    display: inline-block;
+	}
+	.copy-link {
+	    display: none;
+	    margin-left: 0;
+	}
+	.accordeon__item.active .copy-link{
+		display: block;
+	}
+	.enter-code__form{
+		left: 0;
+	    top: 100%;
+	    transform: translateY(0);
+		margin-left: 0;
+		margin-top: 10px;
+		z-index: 2;
+	}
+	.enter-code__form:before{
+		border-width: 0 5px 8px 5px;
+		border-color: transparent transparent #ebedf0 transparent;
+		right: 50%;
+		top: auto;
+		bottom: 100%;
+		transform: translate(-50%,0);
+	}
+	.accordeon__toggle:after {
+	    width: 30px;
+	    height: 30px;
+	}
 }

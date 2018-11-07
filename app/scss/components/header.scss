@@ -36,6 +36,7 @@
 	}
 	&:hover,
   &.active{
+    color: #fff;
 		&:after{
 			background: #f58220;
 		}
@@ -92,6 +93,7 @@
 		transition: background 0.3s ease;
 	}
 	&:hover{
+    color: #fff;
 		&:after{
 			background: #f58220;
 		}
@@ -303,6 +305,11 @@
         transform: rotate(45deg); }
     &:after {
         transform: rotate(-45deg); }
+        &:hover{
+          &:before, &:after{
+            background: #f58220;
+          }
+        }
 }
 
 .search__bg{

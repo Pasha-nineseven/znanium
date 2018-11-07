@@ -361,6 +361,9 @@
 			transform: translateY(-50%) rotate(180deg);
 		}	
 	}
+	&:hover{
+		color: #000;
+	}
 }
 
 .sidebar-submenu{
@@ -421,8 +424,12 @@
 	width: 100px;
 	height: 100px;
 	background: url(../img/content/play.png) no-repeat;
+	transition: background 0.3s ease;
 	display: block;
 	margin: 0 auto 25px;
+	&:hover{
+		background: url(../img/content/play-h.png) no-repeat;
+	}
 }
 
 .play__info{
@@ -712,6 +719,7 @@
 	transition: background 0.3s ease;
 	font-size: 17px;
 	&:hover{
+		color: #fff;
 		background: #5aa7e9;
 	}
 	&:active{
