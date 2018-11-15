@@ -1051,6 +1051,58 @@
 	}
 }
 
+.search-word{
+	color: #9da0a5;
+}
+.search{
+	padding-top: 7px;
+}
+
+.search__inner{
+	background: #f5f6f7;
+	padding: 30px 39px 37px 25px;
+	display: flex;
+	height: 100%;
+}
+.search__img{
+	width: 50px;
+	min-width: 50px;
+	height: 61px;
+	margin-right: 25px;
+	box-shadow:         4px 4px 9px 0px rgba(0, 0, 0, 0.24);
+	img{
+		max-width: 100%;
+		height: auto;
+		max-height: 100%;
+		display: block;
+	}
+}
+
+.search__info{
+	flex: 1;
+	margin-top: -6px;
+	h2{
+		margin-bottom: 17px;
+	}
+}
+.search__item{
+	margin-bottom: 20px;
+}
+
+.search__wrap{
+	display: flex;
+	justify-content: space-between;
+}
+
+.search__title{
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+.search__count{
+	font-size: 24px;
+}
 
 @import "components/footer";
 
