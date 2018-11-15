@@ -125,5 +125,6 @@ $('body').append(
 	<ol id="pages"> \
 		<li><a href="book.html">Книга</a></li> \
 		<li><a href="index.html">Текстовая</a></li> \
+        <li><a href="search.html">Поиск</a></li> \
 	</ol> \
 </div>');

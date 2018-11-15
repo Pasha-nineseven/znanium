@@ -4663,6 +4663,64 @@ textarea, input {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
 
+.search-word {
+  color: #9da0a5; }
+
+.search {
+  padding-top: 7px; }
+
+.search__inner {
+  background: #f5f6f7;
+  padding: 30px 39px 37px 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%; }
+
+.search__img {
+  width: 50px;
+  min-width: 50px;
+  height: 61px;
+  margin-right: 25px;
+  -webkit-box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.24);
+          box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.24); }
+  .search__img img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block; }
+
+.search__info {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: -6px; }
+  .search__info h2 {
+    margin-bottom: 17px; }
+
+.search__item {
+  margin-bottom: 20px; }
+
+.search__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.search__title {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 2px; }
+
+.search__count {
+  font-size: 24px; }
+
 .page-footer {
   background: #428bca;
   padding: 26px 0;
@@ -4749,6 +4807,16 @@ textarea, input {
   .top-menu {
     margin-right: 50px; } }
 
+@media screen and (max-width: 950px) {
+  .search__inner {
+    padding: 25px 15px 25px 15px; }
+  .search__view {
+    text-align: center; }
+  .search__img {
+    margin-right: 15px; }
+  .search__info h2 {
+    font-size: 24px; } }
+
 @media screen and (max-width: 768px) {
   .sidebar {
     margin-bottom: 20px; }
@@ -4772,7 +4840,19 @@ textarea, input {
     margin-bottom: 20px; }
   .book-chars__item {
     width: 100%;
-    padding: 0; } }
+    padding: 0; }
+  .search__wrap {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .search__view {
+    text-align: left;
+    margin-right: 20px; }
+    .search__view:last-child {
+      margin-right: 0; }
+  .search__img {
+    margin-right: 25px; } }
 
 @media screen and (max-width: 600px) {
   .page-footer__wrap {
@@ -4833,3 +4913,12 @@ textarea, input {
   .accordeon__toggle:after {
     width: 30px;
     height: 30px; } }
+
+@media screen and (max-width: 500px) {
+  .search__wrap {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .search__view {
+    margin-right: 0; } }

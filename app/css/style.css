@@ -4807,6 +4807,16 @@ textarea, input {
   .top-menu {
     margin-right: 50px; } }
 
+@media screen and (max-width: 950px) {
+  .search__inner {
+    padding: 25px 15px 25px 15px; }
+  .search__view {
+    text-align: center; }
+  .search__img {
+    margin-right: 15px; }
+  .search__info h2 {
+    font-size: 24px; } }
+
 @media screen and (max-width: 768px) {
   .sidebar {
     margin-bottom: 20px; }
@@ -4830,7 +4840,19 @@ textarea, input {
     margin-bottom: 20px; }
   .book-chars__item {
     width: 100%;
-    padding: 0; } }
+    padding: 0; }
+  .search__wrap {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .search__view {
+    text-align: left;
+    margin-right: 20px; }
+    .search__view:last-child {
+      margin-right: 0; }
+  .search__img {
+    margin-right: 25px; } }
 
 @media screen and (max-width: 600px) {
   .page-footer__wrap {
@@ -4891,3 +4913,12 @@ textarea, input {
   .accordeon__toggle:after {
     width: 30px;
     height: 30px; } }
+
+@media screen and (max-width: 500px) {
+  .search__wrap {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .search__view {
+    margin-right: 0; } }
