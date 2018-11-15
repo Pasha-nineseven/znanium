@@ -126,5 +126,6 @@ $('body').append(
 		<li><a href="book.html">Книга</a></li> \
 		<li><a href="index.html">Текстовая</a></li> \
         <li><a href="search.html">Поиск</a></li> \
+        <li><a href="shelves.html">Полки</a></li> \
 	</ol> \
 </div>');

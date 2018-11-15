@@ -961,7 +961,7 @@
 
 .enter-code__input{
 	border: 1px solid #428bca;
-	padding: 6px 111px 6px 10px;
+	padding: 6px 121px 6px 10px;
 }
 
 .enter-code__submit{
@@ -983,11 +983,14 @@
 	}
 }
 
+.download{
+	padding-top: 20px;
+}
+
 .download__link{
 	display: block;
 	margin-bottom: 25px;
 	font-size: 13px;
-	margin-left: 20px;
 	padding-left: 25px;
 	position: relative;
 	&:last-child{
@@ -1103,6 +1106,41 @@
 .search__count{
 	font-size: 24px;
 }
+
+.shelves-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.create-link{
+		font-size: 17px;
+		display: flex;
+		align-items:center;
+		padding: 0;
+		color: #337ab7;
+		border:0; 
+		background: transparent;
+		&:hover{
+			color: #f58220;
+			background: transparent;
+		} 
+		&:before{
+			content: "";
+			width: 24px;
+			height: 24px;
+			display: inline-block;
+			margin-right: 5px;
+			background: url(../img/svg/add.svg) no-repeat;
+		}
+	}
+}
+
+.shelves-top__show{
+	font-size: 13px;
+	color: #9da0a5;
+	
+}
+
+
 
 @import "components/footer";
 
