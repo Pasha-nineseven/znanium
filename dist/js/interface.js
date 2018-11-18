@@ -97,6 +97,20 @@ $(document).ready(function() {
             $('.enter-code__form').fadeOut();
         }
     });
+
+
+    //SHELVES-SCROLL
+    $("body").on("click", ".js-alphabet-item", function(e){
+        e.preventDefault();
+        goToByScroll($(this).attr("data-letter")); 
+    });
+
+    //LIST-MOBILE-TOGGLE
+    $("body").on("click", ".shelves-list__title", function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).next('.shelves-list-mobile-wrap').slideToggle(5);
+    });
 });
 
 
@@ -111,6 +125,14 @@ $(window).resize(function () {
 // });
 
 // functions
+
+//SHELVES-SCROLL
+function goToByScroll(dataId){
+    dataId = dataId.replace("letter-", "");
+    $('html,body').animate({
+        scrollTop: $('[data-id='+dataId+']').first().offset().top},
+        'slow');
+}
 
 
 // links pages
@@ -127,5 +149,8 @@ $('body').append(
 		<li><a href="index.html">Текстовая</a></li> \
         <li><a href="search.html">Поиск</a></li> \
         <li><a href="shelves.html">Полки</a></li> \
+        <li><a href="list.html">Список книг</a></li> \
+        <li><a href="vebinars.html">Вебинары</a></li> \
+        <li><a href="vebinar.html">Вебинар</a></li> \
 	</ol> \
 </div>');
