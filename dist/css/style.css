@@ -5162,9 +5162,23 @@ textarea, input {
   margin-bottom: 20px;
   color: #fff !important; }
   .vebinar__item:hover .vebinar__info {
-    bottom: 200px; }
+    bottom: inherit;
+    top: 0; }
   .vebinar__item:hover .vebinar__img:before {
     background: rgba(23, 57, 82, 0.85); }
+  .vebinar__item:hover .vebinar__toggle {
+    display: none; }
+  .vebinar__item:hover .vebinar-hover {
+    display: block;
+    opacity: 1;
+    -webkit-transition: all 1.3s ease;
+    transition: all 1.3s ease; }
+
+.vebinar-hover {
+  display: none;
+  -webkit-transition: all 1.3s ease;
+  transition: all 1.3s ease;
+  opacity: 0; }
 
 .vebinar__inner {
   position: relative;
