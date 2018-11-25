@@ -111,6 +111,34 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $(this).next('.shelves-list-mobile-wrap').slideToggle(5);
     });
+
+    //EXPORT-LINK
+    $("body").on("click", ".js-export-link", function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).next('.export-list').slideToggle(100);
+    });
+    //EXPORT-LINK-SUBMENU
+    $("body").on("click", ".export-list__link--submenu", function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).next('.export-list-submenu').slideToggle(100);
+    });
+
+    //FOLDER-TOGGLE
+    $("body").on("click", ".js-folder__link", function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).parent('.folder__item').toggleClass('active');
+        $(this).next('.folder__sub').slideToggle(100);
+    });
+
+    //MAGAZINE-TOGGLE
+    $("body").on("click", ".js-magazine-toggle__link", function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).next('.magazine-toggle__list').slideToggle(100);
+    });
 });
 
 
@@ -152,5 +180,9 @@ $('body').append(
         <li><a href="list.html">Список книг</a></li> \
         <li><a href="vebinars.html">Вебинары</a></li> \
         <li><a href="vebinar.html">Вебинар</a></li> \
+        <li><a href="catalog.html">Каталог</a></li> \
+        <li><a href="list2.html">Список книг 2</a></li> \
+        <li><a href="folder.html">Список папками</a></li> \
+        <li><a href="magazine.html">Страница журнала</a></li> \
 	</ol> \
 </div>');
