@@ -139,6 +139,12 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $(this).next('.magazine-toggle__list').slideToggle(100);
     });
+
+    //USER
+    $("body").on("click", ".js-entrance__user", function(e){
+        e.preventDefault();
+        alert(1);
+    });
 });
 
 
@@ -184,5 +190,6 @@ $('body').append(
         <li><a href="list2.html">Список книг 2</a></li> \
         <li><a href="folder.html">Список папками</a></li> \
         <li><a href="magazine.html">Страница журнала</a></li> \
+        <li><a href="cart.html">Корзина</a></li> \
 	</ol> \
 </div>');

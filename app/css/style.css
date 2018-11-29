@@ -3434,7 +3434,13 @@ textarea, input {
   width: 26px;
   height: 32px;
   background: url(../img/svg/cart.svg) no-repeat;
-  margin-top: -1px; }
+  margin-top: -1px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  -webkit-transition: none;
+  transition: none; }
   .cart-link:hover {
     background: url(../img/svg/cart-h.svg) no-repeat; }
 
@@ -3458,6 +3464,11 @@ textarea, input {
     color: #fff; }
     .entrance:hover:after {
       background: #f58220; }
+
+.entrance__user {
+  color: #fff; }
+  .entrance__user:hover {
+    color: #fff; }
 
 .logo {
   -webkit-transition: all 0.3s ease;
@@ -4360,6 +4371,7 @@ textarea, input {
   width: 100%;
   text-align: center;
   color: #fff;
+  border: 0;
   border-bottom: 2px solid #2f74b0;
   padding: 6px 5px;
   position: absolute;
@@ -6003,6 +6015,35 @@ textarea, input {
 
 .add-btn {
   margin-left: 10px; }
+
+.sidebar--order .book-offers__item {
+  font-size: 20px; }
+
+.sidebar--order .book-offers__price {
+  font-size: 13px;
+  padding: 4px 0; }
+  .sidebar--order .book-offers__price span {
+    font-size: 20px; }
+
+.book-offers__count {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 0; }
+  .book-offers__count input[type="text"] {
+    width: 75px;
+    text-align: center;
+    margin-left: 20px;
+    border: 1px solid #c5cbd5;
+    font-size: 17px; }
+  .book-offers__count span {
+    font-size: 13px;
+    color: #9da0a5; }
 
 .page-footer {
   background: #428bca;
