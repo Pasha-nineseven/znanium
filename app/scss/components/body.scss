@@ -60,6 +60,9 @@ body {
 	&.fixed{
 		overflow: hidden;
 	}
+	&.fixed-search{
+		overflow: hidden;
+	}
 }
 
 textarea,input {
