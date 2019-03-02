@@ -113,8 +113,15 @@
 	    margin-left: 15px;
 	}
 	.sidebar__link,
-	.sidebar-submenu__link{
+	.sidebar-submenu__link,
+	.third-level__item{
 		font-size: 14px;
+	}
+	.third-level__toggle {
+	    right: -9px;
+	}
+	.sidebar__toggle {
+	    top: 5px;
 	}
 	.sidebar-submenu {
 	    padding: 14px 25px;
@@ -165,7 +172,7 @@
 		}
 	}
 	.book-list__media {
-	    width: 260px;
+	    width: 190px;
 	}
 	.book-list__info {
 	    margin-bottom: 0;
@@ -173,6 +180,7 @@
 	}
 	.book-list__media .shelves-list__buttons a {
 	    font-size: 14px;
+	    line-height: 1;
 	}
 	.magazine .shelves-list__item .shelves-list__title{
 		width: 150px;

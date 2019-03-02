@@ -2,10 +2,15 @@ $(document).ready(function() {
 	flexibility(document.documentElement);
 
 	//SIDEBAR-ACCORDEON
-	$("body").on("click", ".sidebar__link", function(e){
+	$("body").on("click", ".js-sidebar__toggle", function(e){
 		e.preventDefault();
 		$(this).toggleClass('active');
-		$(this).parents('.sidebar__item').find('.sidebar-submenu').slideToggle();
+		$(this).parents('.sidebar__item--sub').toggleClass('active');
+	});
+	$("body").on("click", ".js-third-level__toggle", function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$(this).parents('.third-level').toggleClass('active');
 	});
 
 
