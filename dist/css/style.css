@@ -6009,7 +6009,7 @@ textarea, input {
   .folder__link.js-folder__link:before {
     content: "";
     display: inline-block;
-    width: 14px;
+    width: 16px;
     height: 13px;
     background: url(../img/svg/folder-icon.svg) no-repeat;
     position: absolute;
