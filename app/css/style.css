@@ -5986,7 +5986,7 @@ textarea, input {
     height: -webkit-calc(100% - 75px);
     height: calc(100% - 75px);
     position: absolute;
-    top: 55px;
+    top: 62px;
     left: 5px;
     background: #ebedf0;
     position: absolute; }
@@ -6003,6 +6003,8 @@ textarea, input {
   padding-left: 30px; }
   .folder__sub .folder__item:last-child {
     border-bottom: 0; }
+  .folder__sub .folder__item--fourth {
+    margin-left: 0; }
 
 .folder__link.js-folder__link {
   padding: 15px 0 15px 25px; }
@@ -6037,7 +6039,9 @@ textarea, input {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-left: 30px;
+  padding-left: 25px; }
 
 .basket-link {
   display: inline-block;
