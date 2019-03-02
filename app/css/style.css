@@ -4459,12 +4459,12 @@ textarea, input {
   display: flex; }
 
 .book-labels__item {
-  margin-right: 5px;
+  margin-right: 3px;
   margin-bottom: 10px;
   background: #ebedf0;
   color: #000;
   font-size: 13px;
-  padding: 6px 21px;
+  padding: 2px 9px 2px 8px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4476,6 +4476,23 @@ textarea, input {
   .book-labels__item.book-labels__item--new {
     background: #f58220;
     color: #fff; }
+  .book-labels__item.book-labels__item--exclusive {
+    background: #6da1ce;
+    color: #fff; }
+  .book-labels__item.book-labels__item--subscription {
+    background: #7eba5a;
+    color: #fff; }
+  .book-labels__item.book-labels__item--collection {
+    background: #77b0b8;
+    color: #fff; }
+  .book-labels__item.book-labels__item--free {
+    background: #b84e4e;
+    color: #fff; }
+
+.book-labels__img {
+  margin-right: 5px; }
+  .book-labels__img img {
+    display: block; }
 
 .book-labels__icon {
   margin-right: 6px;
