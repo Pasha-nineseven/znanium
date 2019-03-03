@@ -3503,6 +3503,108 @@
 	}
 }
 
+.filter{
+	margin-bottom: 30px;
+	border: 1px solid #ebedf0;
+	.input-wrap{
+		display: block;
+		margin-bottom: 9px;
+	}
+	.input-label{
+		display: block;
+		font-size: 13px;
+		color: #9da0a5;
+		margin-bottom: 5px;
+	}
+	.checkbox-item, .radio-item {
+	    margin-bottom: 6px;
+	}
+}
+
+.filter__toggle{
+	display: none;
+}
+
+.filter__link{
+	display: block;
+	transition: none;
+	text-align: center;
+	padding: 4px 10px;
+	color: #000;
+	&:hover{
+		color: #f58220;
+		span{
+			&:after{
+				background: url(../img/svg/third-h.svg) no-repeat;
+			}
+		}
+	}
+	span{
+		&:after{
+			content: "";
+			display: inline-block;
+			width: 11px;
+			height: 7px;
+			background: url(../img/svg/third.svg) no-repeat;
+			//transition: all 0.3s linear;
+			margin-left: 5px;
+			position: relative;
+    		top: -1px;
+		}
+	}
+	&.active{
+		span{
+			&:after{
+				background: url(../img/svg/f-close.svg) no-repeat;
+				background-size: contain;
+				width: 11px;
+			    height: 9px;
+			    top: 0px;
+			}
+		}
+		&:hover{
+			span{
+				&:after{
+					background: url(../img/svg/f-close-h.svg) no-repeat;
+					background-size: contain;
+				}
+			}
+		}
+	}
+}
+
+.filter__bottom{
+	background: #ebedf0;
+	padding: 20px;
+	text-align: center;
+}
+
+.filter__reset{
+	color: #337ab7;
+	font-size: 13px;
+	background: transparent;
+	border: 0;
+	transition: all 0.3s linear;
+	&:hover{
+		color: #f58220;
+	}
+}
+
+.filter__inner{
+	padding: 8px 20px 11px;
+}
+
+.filter_check{
+	padding-top: 25px;
+}
+
+
+.select-wrap--year{
+	//select{
+		width: 110px; 
+	//}
+}
+
 /* Accordion responsive breakpoint */
 @media only screen and (max-width: 768px) {
     .r-tabs .r-tabs-nav {

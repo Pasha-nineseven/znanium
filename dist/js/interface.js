@@ -270,6 +270,13 @@ $(document).ready(function() {
 		$(this).parents('.message').hide();
 	});
 	
+
+	//FILTER-TOGGLE
+	$("body").on("click", ".js-filter__link", function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$(this).next('.filter__toggle').slideToggle();
+	});
 });	
 
 

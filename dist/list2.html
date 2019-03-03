@@ -245,6 +245,87 @@
 							</div>
 							<div class="col-md-9">
 								<h1>Список книг</h1>
+								<div class="filter">
+									<a href="#" class="filter__link js-filter__link">
+										<span>Фильтры</span>
+									</a>
+									<div class="filter__toggle">
+										<form action="#" method="post">
+											<div class="filter__inner">
+												<div class="row">
+													<div class="col-md-4">
+														<div class="input-wrap">
+															<div class="input-label">Наименование</div>
+															<input type="text">
+														</div>
+														<div class="input-wrap">
+															<div class="input-label">Издатель</div>
+															<input type="text">
+														</div>
+														<div class="input-wrap">
+															<div class="input-label">Год издания</div>
+															<div class="select-wrap select-wrap--year">
+																<select>
+																	<option value="2019" selected>2019</option>
+																	<option value="2020">2020</option>
+																	<option value="2018">2018</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4">
+														<div class="input-wrap">
+															<div class="input-label">Авторы</div>
+															<input type="text">
+														</div>
+														<div class="input-wrap">
+															<div class="input-label">Вид издания</div>
+															<div class="select-wrap">
+																<select>
+																	<option value="Учебник" selected>Учебник</option>
+																	<option value="Учебник2">Учебник2</option>
+																	<option value="Учебник3">Учебник3</option>
+																</select>
+															</div>
+														</div>
+														<div class="input-wrap">
+															<div class="input-label">Уровень образования</div>
+															<div class="select-wrap">
+																<select>
+																	<option value="Бакалавриат" selected>Бакалавриат</option>
+																	<option value="Бакалавриат2">Бакалавриат2</option>
+																	<option value="Бакалавриат3">Бакалавриат3</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-4 filter_check">
+														<div class="checkbox-item">
+															<input type="checkbox" id="filter1" name="filter">
+															<label for="filter1">Новинка</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="filter2" name="filter">
+															<label for="filter2">В моей подписке</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="filter3" name="filter">
+															<label for="filter3">Эксклюзив</label>
+														</div>
+														<div class="checkbox-item">
+															<input type="checkbox" id="filter4" name="filter">
+															<label for="filter4">Бесплатно</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="filter__bottom">
+												<button type="submit" class="btn">Применить</button>
+												<button type="reset" class="filter__reset">Очистить</button>
+											</div>
+										</form>
+									</div>
+								</div>
 								<div class="shelves-top">
 									<div class="shelves-top__show">Показано <span>1-10</span> из <span>44</span></div>
 									<div class="export-link-wrap">
