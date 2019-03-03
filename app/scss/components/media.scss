@@ -321,6 +321,15 @@
 	    width: 100%;
 	    padding-right: 0;
 	}
+	.input-label {
+	    width: 100%;
+	    min-width: 100%;
+	        padding-top: 0;
+    margin-bottom: 10px;
+	}
+	.input-wrap {
+	    flex-wrap: wrap;
+	}
 }
 
 @media screen and (max-width: 768px){
@@ -919,6 +928,12 @@
 	}
 	.star{
 		left: -12px;
+	}
+	.message {
+	    width: 100%;
+	}
+	.uploadbutton .button{
+		width: 100%;
 	}
 }
 

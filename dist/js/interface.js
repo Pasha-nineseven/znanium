@@ -214,6 +214,61 @@ $(document).ready(function() {
 	if ($('.stars').length>0) {
 		changeOverlay();
 	}
+
+
+	//DATEPICKER
+    if ($('.input-calendar').length>0) {
+		$('.input-calendar').datepicker({
+			dateFormat : "dd-mm-yy",
+			minDate: new Date($('#hiddendelivdate').val()),
+			monthNames : ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+			dayNamesMin : ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+		});
+	}
+
+
+
+	//INPUT-FILE
+	if ($('.uploadbutton').length>0) {
+		$('.input-file').on('change', function (event) {
+		    var file = this.files[0];
+		    if(file){
+				$(this).parents('.input-wrap').find('.remove-file').remove();
+				$(this).parents('.input-wrap').find('.button').remove();
+				$(this).parents('.input-wrap').find('.input-file').after('<div class="button"><div class="button__inner">Перетащите еще файл в поле или <span>выберите с диска</span></div></div>');
+		        $(this).siblings('.input-file-text')
+		        	.html(
+		        		this.value.replace(/C:\\fakepath\\/i, '')
+		        		+ '<div class="file-size">'
+		        		+ ' ('
+		        		+ Number(file.size/1024/1024).toPrecision(2)
+		        		+ 'Mb)'
+		        		+ '</div>'
+		    		)
+		        	.after("<a href='#' class='remove-file'></a>").addClass('active');
+		    }else{
+		        $(this).siblings('.input-file-text').html('').removeClass('active');
+		        $(this).parents('.input-wrap').find('.remove-file').remove();
+		    }
+		});
+		$( 'body' ).on( 'click', '.remove-file', function(){
+			$(this).parents('.input-wrap').find('.input-file-text').html('');
+			$(this).parents('.input-wrap').find('.remove-file').remove();
+
+			$(this).parents('.uploadbutton').find('.input-file-text').html('');
+			$('.input-file-text').removeClass('active');
+			return false
+		});
+
+	}
+
+
+
+
+	$("body").on("click", ".js-message__close", function(e){
+		e.preventDefault();
+		$(this).parents('.message').hide();
+	});
 	
 });	
 
@@ -276,5 +331,6 @@ $('body').append(
 		<li><a href="magazine.html">Страница журнала</a></li> \
 		<li><a href="cart.html">Корзина</a></li> \
 		<li><a href="index.html">Главная</a></li> \
+		<li><a href="form.html">Форма</a></li> \
 	</ol> \
 </div>');
