@@ -4607,7 +4607,8 @@ textarea, input {
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  margin-bottom: 10px; }
 
 .book-labels__item {
   margin-right: 3px;
@@ -6060,7 +6061,8 @@ textarea, input {
 .book-list__title {
   font-size: 17px;
   margin-bottom: 12px;
-  line-height: 1.2; }
+  line-height: 1.2;
+  display: block; }
 
 .book-list__chars {
   font-size: 13px; }

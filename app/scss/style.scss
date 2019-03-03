@@ -959,6 +959,7 @@
 .book-labels{
 	display: flex;
 	flex-wrap:wrap;
+	margin-bottom: 10px;
 }
 
 .book-labels__item{
@@ -2450,6 +2451,7 @@
 	font-size: 17px;
 	margin-bottom: 12px;
 	line-height: 1.2;
+	display: block;
 }
 
 .book-list__chars{
