@@ -25,10 +25,59 @@
 						</a>
 						<div class="page-header__content">
 							<div class="top-menu">
-								<span class="top-menu__item active">Каталог</span>
-								<a href="#" class="top-menu__item">О нас</a>
-								<a href="#" class="top-menu__item">Контакты</a>
-								<a href="#" class="top-menu__item">Регистрация</a>
+								<div class="top-menu__item top-menu__item--submenu">
+									<a href="#" class="top-menu__link">Каталог</a>
+									<div class="submenu">
+										<div class="submenu__inner">
+											<div class="submenu__col">
+												<a href="#" class="submenu__first">
+													Новинки и новые поступления
+												</a>
+											</div>
+											<div class="submenu__col">
+												<a href="#" class="submenu__first">Книги</a>
+												<a href="#" class="submenu__second">Тематика</a>
+												<a href="#" class="submenu__second">ОКСО</a>
+												<a href="#" class="submenu__second">УДК</a>
+												<a href="#" class="submenu__second">ББК</a>
+												<a href="#" class="submenu__second">ГРНТИ</a>
+												<a href="#" class="submenu__second">Учебные дисциплины</a>
+											</div>
+											<div class="submenu__col">
+												<a href="#" class="submenu__first">Журналы</a>
+												<a href="#" class="submenu__second">Тематика</a>
+												<a href="#" class="submenu__second">Номенклатура</a>
+												<a href="#" class="submenu__second">ГРНТИ</a>
+												<a href="#" class="submenu__second">ОКСО</a>
+												<a href="#" class="submenu__second">Журналы ИНФРА-М</a>
+												<a href="#" class="submenu__second">Алфавитный указатель</a>
+											</div>
+											<div class="submenu__col">
+												<a href="#" class="submenu__first">Статьи</a>
+												<a href="#" class="submenu__second">Тематика</a>
+												<a href="#" class="submenu__second">УДК</a>
+												<a href="#" class="submenu__second">ГРНТИ</a>
+											</div>
+											<div class="submenu__col">
+												<a href="#" class="submenu__first">Авторы</a>
+												<a href="#" class="submenu__first">Издатели</a>
+												<a href="#" class="submenu__first">ВУЗы</a>
+												<a href="#" class="submenu__first">Коллекции</a>
+												<a href="#" class="submenu__first">В свободном доступе</a>
+												<a href="#" class="submenu__first">Владельцам бумажных книг</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="top-menu__item active">
+									<span class="top-menu__link">О нас</span>
+								</div>
+								<div class="top-menu__item">
+									<a href="#" class="top-menu__link">Контакты</a>
+								</div>
+								<div class="top-menu__item">
+									<a href="#" class="top-menu__link">Регистрация</a>
+								</div>
 							</div>
 							<div class="page-header__search">
 								<a href="#" class="search-link js-search-link"></a>
@@ -45,9 +94,72 @@
 			<div class="menu-mobile">
 				<a href="#" class="menu-mobile__close"></a>
 				<div class="menu-mobile__list">
-					<a href="#" class="menu-mobile__link">Каталог</a>
-					<a href="#" class="menu-mobile__link">О нас</a>
-					<a href="#" class="menu-mobile__link">Контакты</a>
+					<div class="menu-mobile__item menu-mobile__item--submenu">
+						<a href="#" class="menu-mobile__link">Каталог</a>
+						<a href="#" class="submenu-toggle js-submenu-toggle"></a>
+					</div>
+					<div class="mobile-submenu">
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">Новинки и новые поступления</a>
+						</div>
+						<div class="mobile-submenu__item menu-mobile__item--third">
+							<a href="#" class="mobile-submenu__link">Книги</a>
+							<a href="#" class="third-level-toggle js-third-level-toggle"></a>
+						</div>
+						<div class="third-level">
+							<a href="#" class="third-level__link">Тематика</a>
+							<a href="#" class="third-level__link">ОКСО</a>
+							<a href="#" class="third-level__link">УДК</a>
+							<a href="#" class="third-level__link">ББК</a>
+							<a href="#" class="third-level__link">ГРНТИ</a>
+							<a href="#" class="third-level__link">Учебные дисциплины</a>
+						</div>
+						<div class="mobile-submenu__item menu-mobile__item--third">
+							<a href="#" class="mobile-submenu__link">Журналы</a>
+							<a href="#" class="third-level-toggle js-third-level-toggle"></a>
+						</div>
+						<div class="third-level">
+							<a href="#" class="third-level__link">Тематика</a>
+							<a href="#" class="third-level__link">Номенклатура</a>
+							<a href="#" class="third-level__link">ГРНТИ</a>
+							<a href="#" class="third-level__link">ОКСО</a>
+							<a href="#" class="third-level__link">Журналы ИНФРА-М</a>
+							<a href="#" class="third-level__link">Алфавитный указатель</a>
+						</div>
+						<div class="mobile-submenu__item menu-mobile__item--third">
+							<a href="#" class="mobile-submenu__link">Статьи</a>
+							<a href="#" class="third-level-toggle js-third-level-toggle"></a>
+						</div>
+						<div class="third-level">
+							<a href="#" class="third-level__link">Тематика</a>
+							<a href="#" class="third-level__link">УДК</a>
+							<a href="#" class="third-level__link">ГРНТИ</a>
+						</div>
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">Авторы</a>
+						</div>
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">Издатели</a>
+						</div>
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">ВУЗы</a>
+						</div>
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">Коллекции</a>
+						</div>
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">В свободном доступе</a>
+						</div>
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">Владельцам бумажных книг</a>
+						</div>
+					</div>
+					<div class="menu-mobile__item">
+						<a href="#" class="menu-mobile__link">О нас</a>
+					</div>
+					<div class="menu-mobile__item">
+						<a href="#" class="menu-mobile__link">Контакты</a>
+					</div>
 				</div>
 				<div class="menu-mobile-add">
 					<a href="#" class="menu-mobile-add__links">Регистрация</a>

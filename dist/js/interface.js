@@ -277,6 +277,19 @@ $(document).ready(function() {
 		$(this).toggleClass('active');
 		$(this).next('.filter__toggle').slideToggle();
 	});
+
+	//MOBILE-SUBMENU-TOGGLE
+	$("body").on("click", ".js-submenu-toggle", function(e){
+		e.preventDefault();
+		$(this).parents('.menu-mobile__item').toggleClass('active');
+		$('.mobile-submenu').slideToggle();
+	});
+	//MOBILE-THIRD-LEVEL-TOGGLE
+	$("body").on("click", ".js-third-level-toggle", function(e){
+		e.preventDefault();
+		$(this).parents('.menu-mobile__item--third').toggleClass('active');
+		$(this).parents('.mobile-submenu__item').next('.third-level').slideToggle();
+	});
 });	
 
 

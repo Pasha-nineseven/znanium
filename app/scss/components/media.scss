@@ -737,6 +737,9 @@
 		    padding: 15px 0;
 		}
 	}
+	.page-header__content{
+		position: static;
+	}
 }
 
 @media screen and (max-width: 600px){
