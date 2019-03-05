@@ -198,6 +198,10 @@
 	.magazine__years .sidebar-submenu {
 	    padding: 15px 10px;
 	}
+	.classifier-toggle .classifier {
+	    width: 100%;
+	    left: 0;
+	}
 }
 
 @media screen and (max-width: 950px){
@@ -937,6 +941,12 @@
 	}
 	.uploadbutton .button{
 		width: 100%;
+	}
+	.classifier{
+		padding-right: 20px;
+	}
+	.workarea h1 {
+	    font-size: 24px;
 	}
 }
 

@@ -7231,6 +7231,47 @@ textarea, input {
 .select-wrap--year {
   width: 110px; }
 
+.classifier-toggle {
+  display: none; }
+  .classifier-toggle .classifier {
+    -webkit-box-shadow: 0px 2px 6px 0px rgba(102, 119, 140, 0.26);
+            box-shadow: 0px 2px 6px 0px rgba(102, 119, 140, 0.26);
+    position: absolute;
+    z-index: 3;
+    background: #fff;
+    width: -webkit-calc(100% - 97px);
+    width: calc(100% - 97px);
+    left: 22px;
+    border: 0; }
+
+.classifier {
+  font-size: 16px;
+  padding: 9px 60px 5px 29px;
+  border: 1px solid #ebedf0;
+  max-height: 690px;
+  overflow-y: auto; }
+  .classifier .folder__link.js-folder__link:before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/svg/c-plus.svg) center no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .classifier .folder__link.js-folder__link.active:before {
+    background: url(../img/svg/c-minus-h.svg) center no-repeat; }
+  .classifier .folder__sub .folder__item--fourth {
+    padding-left: 0; }
+  .classifier .folder__item:last-child {
+    border-bottom: 0; }
+
+.col-md-9 > h1 {
+  position: relative; }
+
 /* Accordion responsive breakpoint */
 @media only screen and (max-width: 768px) {
   .r-tabs .r-tabs-nav {
@@ -7435,7 +7476,10 @@ textarea, input {
   .magazine__years .book-offers__price span {
     font-size: 16px; }
   .magazine__years .sidebar-submenu {
-    padding: 15px 10px; } }
+    padding: 15px 10px; }
+  .classifier-toggle .classifier {
+    width: 100%;
+    left: 0; } }
 
 @media screen and (max-width: 950px) {
   .search__inner {
@@ -8039,7 +8083,11 @@ textarea, input {
   .message {
     width: 100%; }
   .uploadbutton .button {
-    width: 100%; } }
+    width: 100%; }
+  .classifier {
+    padding-right: 20px; }
+  .workarea h1 {
+    font-size: 24px; } }
 
 @media screen and (max-width: 575px) {
   .catalog__descr {

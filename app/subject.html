@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>test</title>
+		<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
+		<link href="css/libs.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout">
+			<header class="page-header">
+				<div class="container-fluid">
+					<div class="page-header__wrap">
+						<a href="#" class="logo">
+							<img src="img/content/logo.png" alt="">
+						</a>
+						<div class="page-header__content">
+							<div class="top-menu">
+								<div class="top-menu__item top-menu__item--submenu">
+									<a href="#" class="top-menu__link">Каталог</a>
+									<div class="submenu">
+										<div class="submenu__inner">
+											<div class="submenu__col">
+												<a href="#" class="submenu__first">
+													Новинки и новые поступления
+												</a>
+											</div>
+											<div class="submenu__col">
+												<a href="#" class="submenu__first">Книги</a>
+												<a href="#" class="submenu__second">Тематика</a>
+												<a href="#" class="submenu__second">ОКСО</a>
+												<a href="#" class="submenu__second">УДК</a>
+												<a href="#" class="submenu__second">ББК</a>
+												<a href="#" class="submenu__second">ГРНТИ</a>
+												<a href="#" class="submenu__second">Учебные дисциплины</a>
+											</div>
+											<div class="submenu__col">
+												<a href="#" class="submenu__first">Журналы</a>
+												<a href="#" class="submenu__second">Тематика</a>
+												<a href="#" class="submenu__second">Номенклатура</a>
+												<a href="#" class="submenu__second">ГРНТИ</a>
+												<a href="#" class="submenu__second">ОКСО</a>
+												<a href="#" class="submenu__second">Журналы ИНФРА-М</a>
+												<a href="#" class="submenu__second">Алфавитный указатель</a>
+											</div>
+											<div class="submenu__col">
+												<a href="#" class="submenu__first">Статьи</a>
+												<a href="#" class="submenu__second">Тематика</a>
+												<a href="#" class="submenu__second">УДК</a>
+												<a href="#" class="submenu__second">ГРНТИ</a>
+											</div>
+											<div class="submenu__col">
+												<a href="#" class="submenu__first">Авторы</a>
+												<a href="#" class="submenu__first">Издатели</a>
+												<a href="#" class="submenu__first">ВУЗы</a>
+												<a href="#" class="submenu__first">Коллекции</a>
+												<a href="#" class="submenu__first">В свободном доступе</a>
+												<a href="#" class="submenu__first">Владельцам бумажных книг</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="top-menu__item active">
+									<span class="top-menu__link">О нас</span>
+								</div>
+								<div class="top-menu__item">
+									<a href="#" class="top-menu__link">Контакты</a>
+								</div>
+								<div class="top-menu__item">
+									<a href="#" class="top-menu__link">Регистрация</a>
+								</div>
+							</div>
+							<div class="page-header__search">
+								<a href="#" class="search-link js-search-link"></a>
+							</div>
+							<a href="#" class="cart-link"></a>
+							<a href="#" class="entrance">Вход</a>
+							<a href="#" class="menu-btn js-menu-btn">
+								<span class="burger-icon"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="menu-mobile">
+				<a href="#" class="menu-mobile__close"></a>
+				<div class="menu-mobile__list">
+					<div class="menu-mobile__item menu-mobile__item--submenu">
+						<a href="#" class="menu-mobile__link">Каталог</a>
+						<a href="#" class="submenu-toggle js-submenu-toggle"></a>
+					</div>
+					<div class="mobile-submenu">
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">Новинки и новые поступления</a>
+						</div>
+						<div class="mobile-submenu__item menu-mobile__item--third">
+							<a href="#" class="mobile-submenu__link">Книги</a>
+							<a href="#" class="third-level-toggle js-third-level-toggle"></a>
+						</div>
+						<div class="third-level">
+							<a href="#" class="third-level__link">Тематика</a>
+							<a href="#" class="third-level__link">ОКСО</a>
+							<a href="#" class="third-level__link">УДК</a>
+							<a href="#" class="third-level__link">ББК</a>
+							<a href="#" class="third-level__link">ГРНТИ</a>
+							<a href="#" class="third-level__link">Учебные дисциплины</a>
+						</div>
+						<div class="mobile-submenu__item menu-mobile__item--third">
+							<a href="#" class="mobile-submenu__link">Журналы</a>
+							<a href="#" class="third-level-toggle js-third-level-toggle"></a>
+						</div>
+						<div class="third-level">
+							<a href="#" class="third-level__link">Тематика</a>
+							<a href="#" class="third-level__link">Номенклатура</a>
+							<a href="#" class="third-level__link">ГРНТИ</a>
+							<a href="#" class="third-level__link">ОКСО</a>
+							<a href="#" class="third-level__link">Журналы ИНФРА-М</a>
+							<a href="#" class="third-level__link">Алфавитный указатель</a>
+						</div>
+						<div class="mobile-submenu__item menu-mobile__item--third">
+							<a href="#" class="mobile-submenu__link">Статьи</a>
+							<a href="#" class="third-level-toggle js-third-level-toggle"></a>
+						</div>
+						<div class="third-level">
+							<a href="#" class="third-level__link">Тематика</a>
+							<a href="#" class="third-level__link">УДК</a>
+							<a href="#" class="third-level__link">ГРНТИ</a>
+						</div>
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">Авторы</a>
+						</div>
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">Издатели</a>
+						</div>
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">ВУЗы</a>
+						</div>
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">Коллекции</a>
+						</div>
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">В свободном доступе</a>
+						</div>
+						<div class="mobile-submenu__item">
+							<a href="#" class="mobile-submenu__link">Владельцам бумажных книг</a>
+						</div>
+					</div>
+					<div class="menu-mobile__item">
+						<a href="#" class="menu-mobile__link">О нас</a>
+					</div>
+					<div class="menu-mobile__item">
+						<a href="#" class="menu-mobile__link">Контакты</a>
+					</div>
+				</div>
+				<div class="menu-mobile-add">
+					<a href="#" class="menu-mobile-add__links">Регистрация</a>
+					<a href="#" class="menu-mobile-add__links">Вход</a>
+				</div>
+				<div class="menu-mobile__socials">
+					<div class="socials__txt">Мы в социальных сетях</div>
+					<div class="socials">
+						<a href="#" class="socials__item socials__item--youtube">
+							<img src="img/svg/yt.svg" alt="">
+						</a>
+						<a href="#" class="socials__item socials__item--vk">
+							<img src="img/svg/vk.svg" alt="">
+						</a>
+						<a href="#" class="socials__item socials__item--fb">
+							<img src="img/svg/fb.svg" alt="">
+						</a>
+						<a href="#" class="socials__item socials__item--twitter">
+							<img src="img/svg/tw.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="menu-mobile__bg"></div>
+			<div class="search-form">
+				<a href="#" class="search__close"></a>
+				<div class="search-form__item">
+					<form action="#" method="post">
+						<input type="text" class="search-form__input" placeholder="Поиск по сайту">
+						<input type="submit" class="search-form__submit">
+					</form>
+				</div>
+				<div class="menu-mobile__socials">
+					<div class="socials__txt">Мы в социальных сетях</div>
+					<div class="socials">
+						<a href="#" class="socials__item socials__item--youtube">
+							<img src="img/svg/yt.svg" alt="">
+						</a>
+						<a href="#" class="socials__item socials__item--vk">
+							<img src="img/svg/vk.svg" alt="">
+						</a>
+						<a href="#" class="socials__item socials__item--fb">
+							<img src="img/svg/fb.svg" alt="">
+						</a>
+						<a href="#" class="socials__item socials__item--twitter">
+							<img src="img/svg/tw.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="search__bg"></div>
+			<div class="wrapper">
+				<div class="page-content workarea">
+					<div class="breadcrumbs">
+						<div class="container-fluid">
+							<div class="breadcrumbs__wrap">
+								<a href="#" class="breadcrumbs__item">Главная</a>
+								<a href="#" class="breadcrumbs__item">Каталог</a>
+								<span class="breadcrumbs__item">Список книг</span>
+							</div>
+						</div>
+					</div>
+					<!-- CONTENT-PART -->
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-3 sidebar">
+								<div class="sidebar__item">
+									<div class="sidebar__top">
+										<span class="sidebar__link">
+											Новинки и новые<br> поступления
+										</span>
+									</div>
+								</div>
+								<div class="sidebar__item sidebar__item--sub">
+									<div class="sidebar__top">
+										<a href="#" class="sidebar__link">
+											Книги
+										</a>
+										<a href="#" class="sidebar__toggle js-sidebar__toggle"></a>
+									</div>
+									<div class="sidebar-submenu">
+										<div class="sidebar-submenu__item">
+											<a href="#" class="sidebar-submenu__link">Подпункт №1</a>
+										</div>
+										<div class="sidebar-submenu__item">
+											<a href="#" class="sidebar-submenu__link">Подпункт №2</a>
+										</div>
+										<div class="sidebar-submenu__item">
+											<a href="#" class="sidebar-submenu__link">Подпункт №3</a>
+										</div>
+									</div>
+								</div>
+								<div class="sidebar__item sidebar__item--sub active">
+									<div class="sidebar__top">
+										<span class="sidebar__link">
+											Журналы
+										</span>
+										<a href="#" class="sidebar__toggle js-sidebar__toggle"></a>
+									</div>
+									<div class="sidebar-submenu">
+										<div class="sidebar-submenu__item">
+											<span class="sidebar-submenu__link active">Тематика</span>
+										</div>
+										<div class="sidebar-submenu__item">
+											<a href="#" class="sidebar-submenu__link">ОКСО</a>
+										</div>
+										<div class="sidebar-submenu__item">
+											<a href="#" class="sidebar-submenu__link">УДК</a>
+										</div>
+										<div class="sidebar-submenu__item">
+											<a href="#" class="sidebar-submenu__link">ВВК</a>
+										</div>
+										<div class="sidebar-submenu__item">
+											<a href="#" class="sidebar-submenu__link">ГРНТИ</a>
+										</div>
+										<div class="sidebar-submenu__item">
+											<a href="#" class="sidebar-submenu__link">Учебные дисциплины</a>
+										</div>
+									</div>
+								</div>
+								<div class="sidebar__item sidebar__item--sub">
+									<div class="sidebar__top">
+										<a href="#" class="sidebar__link">
+											Статьи
+										</a>
+										<a href="#" class="sidebar__toggle js-sidebar__toggle"></a>
+									</div>
+									<div class="sidebar-submenu">
+										<div class="sidebar-submenu__item third-level">
+											<a href="#" class="sidebar-submenu__link">Тематика</a>
+											<a href="#" class="third-level__toggle js-third-level__toggle"></a>
+											<div class="third-level__list">
+												<a href="#" class="third-level__item">3й уровень</a>
+												<a href="#" class="third-level__item">Еще один пункт</a>
+											</div>
+										</div>
+										<div class="sidebar-submenu__item third-level">
+											<a href="#" class="sidebar-submenu__link">ОКСО</a>
+											<a href="#" class="third-level__toggle js-third-level__toggle"></a>
+											<div class="third-level__list">
+												<a href="#" class="third-level__item">3й уровень</a>
+												<a href="#" class="third-level__item">Еще один пункт</a>
+											</div>
+										</div>
+										<div class="sidebar-submenu__item">
+											<a href="#" class="sidebar-submenu__link">УДК</a>
+										</div>
+										<div class="sidebar-submenu__item">
+											<a href="#" class="sidebar-submenu__link">ВВК</a>
+										</div>
+									</div>
+								</div>
+								<div class="sidebar__item">
+									<div class="sidebar__top">
+										<a href="#" class="sidebar__link">
+											Авторы
+										</a>
+									</div>
+								</div>
+								<div class="sidebar__item">
+									<div class="sidebar__top">
+										<a href="#" class="sidebar__link">
+											Издатели
+										</a>
+									</div>
+								</div>
+								<div class="sidebar__item">
+									<div class="sidebar__top">
+										<a href="#" class="sidebar__link">
+											ВУЗы
+										</a>
+									</div>
+								</div>
+								<div class="sidebar__item">
+									<div class="sidebar__top">
+										<a href="#" class="sidebar__link">
+											Коллекции
+										</a>
+									</div>
+								</div>
+								<div class="sidebar__item">
+									<div class="sidebar__top">
+										<a href="#" class="sidebar__link">
+											В свободном доступе
+										</a>
+									</div>
+								</div>
+								<div class="sidebar__item">
+									<div class="sidebar__top">
+										<a href="#" class="sidebar__link">
+											Владельцам бумажных книг
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-9">
+								<h1>Тематика</h1>
+								<div class="classifier">
+									<!-- first -->
+									<div class="folder__item">
+										<a href="#" class="folder__link js-folder__link">Academic Studies Press</a>
+										<!-- second -->
+										<div class="folder__sub">
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="folder__item">
+										<a href="#" class="folder__link js-folder__link">Academic Studies Press</a>
+										<!-- second -->
+										<div class="folder__sub">
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="folder__item">
+										<a href="#" class="folder__link js-folder__link">Academic Studies Press</a>
+										<!-- second -->
+										<div class="folder__sub">
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+												</div>
+											</div>
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="folder__item">
+										<a href="#" class="folder__link js-folder__link">Academic Studies Press</a>
+										<!-- second -->
+										<div class="folder__sub">
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+												</div>
+											</div>
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="folder__item">
+										<a href="#" class="folder__link js-folder__link">Academic Studies Press</a>
+										<!-- second -->
+										<div class="folder__sub">
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="folder__item">
+												<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+												<!-- third -->
+												<div class="folder__sub">
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<!-- fourth -->
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+													<div class="folder__item folder__item--fourth">
+														<a href="#" class="folder__link">Test test (<span>9</span>)</a>
+													</div>
+													<div class="folder__item">
+														<a href="#" class="folder__link js-folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+														<div class="folder__sub">
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+															<div class="folder__item folder__item--fourth">
+																<a href="#" class="folder__link">Academic Studies Press / Религиоведение (<span>9</span>)</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<!--end CONTENT-PART -->
+			</div>
+			<footer class="page-footer">
+				<div class="container-fluid">
+					<div class="page-footer__wrap">
+						<div class="page-footer__copyright">
+							&copy; ООО «Знаниум» 2018
+						</div>
+						<div class="page-footer__socials">
+							<div class="socials">
+								<a href="#" class="socials__item socials__item--youtube">
+									<img src="img/svg/yt.svg" alt="">
+								</a>
+								<a href="#" class="socials__item socials__item--vk">
+									<img src="img/svg/vk.svg" alt="">
+								</a>
+								<a href="#" class="socials__item socials__item--fb">
+									<img src="img/svg/fb.svg" alt="">
+								</a>
+								<a href="#" class="socials__item socials__item--twitter">
+									<img src="img/svg/tw.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			
+		</div><!-- END LAYOUT-->
+
+		<script src="js/libs.min.js"></script>
+		<script src="js/interface.js"></script>
+	</body>
+</html>

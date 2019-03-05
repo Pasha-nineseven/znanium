@@ -275,7 +275,7 @@ $(document).ready(function() {
 	$("body").on("click", ".js-filter__link", function(e){
 		e.preventDefault();
 		$(this).toggleClass('active');
-		$(this).next('.filter__toggle').slideToggle();
+		$(this).next('.filter__toggle').slideToggle(100);
 	});
 
 	//MOBILE-SUBMENU-TOGGLE
@@ -289,6 +289,13 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(this).parents('.menu-mobile__item--third').toggleClass('active');
 		$(this).parents('.mobile-submenu__item').next('.third-level').slideToggle();
+	});
+
+
+	//CLASSIFIER-TOGGLE
+	$("body").on("click", ".js-classifier-toggle", function(e){
+		e.preventDefault();
+		$('.classifier-toggle').slideToggle(100);
 	});
 });	
 
@@ -352,5 +359,7 @@ $('body').append(
 		<li><a href="cart.html">Корзина</a></li> \
 		<li><a href="index.html">Главная</a></li> \
 		<li><a href="form.html">Форма</a></li> \
+		<li><a href="classifier.html">Классификатор</a></li> \
+		<li><a href="subject.html">Тематика</a></li> \
 	</ol> \
 </div>');
