@@ -4669,17 +4669,19 @@ textarea, input {
 
 .book__img {
   margin-bottom: 35px;
-  -webkit-box-shadow: 0 10px 17px -7px rgba(0, 0, 0, 0.45);
-          box-shadow: 0 10px 17px -7px rgba(0, 0, 0, 0.45);
-  display: inline-block; }
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  width: 209px;
+  height: 293px; }
   .book__img img {
     max-width: 100%;
     height: auto;
     display: block; }
 
 .book__img--magazine {
-  -webkit-box-shadow: 10px 10px 17px -7px rgba(0, 0, 0, 0.45);
-          box-shadow: 10px 10px 17px -7px rgba(0, 0, 0, 0.45); }
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15); }
 
 .book-nav__link {
   display: block;
@@ -6192,8 +6194,8 @@ textarea, input {
 .book-list__img {
   width: 100px;
   height: 141px;
-  -webkit-box-shadow: 9px 10px 17px -7px rgba(0, 0, 0, 0.25);
-          box-shadow: 9px 10px 17px -7px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 25px; }
   .book-list__img img {
     display: block;

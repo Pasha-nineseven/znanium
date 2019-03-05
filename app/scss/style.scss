@@ -838,8 +838,10 @@
 
 .book__img{
 	margin-bottom: 35px;
-	box-shadow: 0 10px 17px -7px rgba(0, 0, 0, 0.45);
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
 	display: inline-block;
+	width: 209px;
+	height: 293px;
 	img{
 		max-width: 100%;
 		height: auto;
@@ -848,7 +850,7 @@
 }
 
 .book__img--magazine{
-	box-shadow: 10px 10px 17px -7px rgba(0, 0, 0, 0.45);
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
 .book-nav__link{
@@ -2412,7 +2414,7 @@
 .book-list__img{
 	width: 100px;
 	height: 141px;
-	box-shadow: 9px 10px 17px -7px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
 	margin-bottom: 25px;
 	img{
 		display: block;
