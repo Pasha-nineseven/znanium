@@ -297,6 +297,14 @@ $(document).ready(function() {
 		e.preventDefault();
 		$('.classifier-toggle').slideToggle(100);
 	});
+
+
+	//JOURNAL-TOGGLE
+	$("body").on("click", ".js-journal__link", function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$(this).parents('.journal__item').find('.journal__info').slideToggle(100);
+	});
 });	
 
 

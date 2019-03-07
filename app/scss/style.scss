@@ -840,17 +840,18 @@
 	margin-bottom: 35px;
 	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
 	display: inline-block;
-	width: 209px;
+	//width: 204px;
 	height: 293px;
 	img{
 		max-width: 100%;
 		height: auto;
 		display: block;
+		max-height: 100%;
 	}
 }
 
 .book__img--magazine{
-	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
 .book-nav__link{
@@ -3655,6 +3656,190 @@
 
 .col-md-9>h1{
 	position: relative;
+}
+
+
+.journal{
+	padding-top: 40px;
+}
+
+.journal__item{
+	margin-bottom: 10px;
+	border: 1px solid #ebedf0;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.journal__top{
+	background:#ebedf0;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	.book-labels__item{
+		margin: 0;
+	}
+}
+
+.journal__link{
+	padding-left: 20px;
+	position: relative;
+	display: inline-block;
+
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		background: url(../img/svg/c-plus.svg) center no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&:hover{
+		color: #000;
+		&:before{
+			
+		}
+	}
+	&.active{
+		color: #000;
+		&:before{
+			    background: url(../img/svg/c-minus-h.svg) center no-repeat;
+		}
+	}
+}
+
+.journal__total{
+	display: flex;
+}
+.journal__total__item{
+	margin-right: 20px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.journal__total__sum{
+	background: #fff;
+	text-align: center;
+	font-size: 20px;
+	padding: 12px 6px;
+	span{
+		font-size: 13px;
+	}
+}
+
+
+.journal__info{
+	display: none;
+}
+.journal__inner{
+	display: flex;
+	    align-items: flex-start;
+	border-bottom: 1px solid #ebedf0;
+	padding: 20px;
+	&:last-child{
+		border-bottom: 0;
+	}
+}
+
+
+.journal__img {
+    width: 100px;
+        min-width: 100px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+    margin-right: 31px;
+    img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+		max-height: 100%;
+    }
+}
+
+.journal__title{
+	margin-right: 15px;
+	width: 180px;
+	min-width: 180px;
+	line-height: 1.2;
+}
+
+.journal__title__link{
+	display: block;
+	margin-bottom: 5px;
+	font-size: 17px;
+}
+.journal__release{
+	font-size: 13px;
+}
+
+.journal__buttons{
+	width: 135px;
+	margin-right: 41px;
+	.book-nav__link{
+		margin-bottom: 10px;
+		line-height: 1;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		//padding-left: 31px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.book-nav__icon {
+	    text-align: center;
+	}
+}
+
+.journal__sum{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.journal__sum__item{
+	margin-right: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	width: 161px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+.journal__sum__count{
+	border: 1px solid #ebedf0;
+	border-right: 0;
+	flex: 1;
+	text-align: center;
+	padding: 6px 0; 
+	font-size: 17px;
+	span{
+		font-size: 13px;
+	}
+}
+
+.journal__sum__btn{
+	border-bottom: 2px solid #2f74b0;
+    background: #428bca url(../img/svg/in-basket.svg) center no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 39px;
+    transition: all 0.3s linear;
+    &:hover{
+    	background: #599cd7 url(../img/svg/in-basket.svg) center no-repeat;
+    }
+}
+
+.journal__labels{
+	text-align: right;
+	flex:1;
+}
+
+.journal__labels__inner{
+	    display: flex;
+    justify-content: flex-end;
 }
 
 /* Accordion responsive breakpoint */
