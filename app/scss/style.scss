@@ -460,6 +460,11 @@
 	&:last-child{
 		margin-bottom: 0;
 	}
+	&.active{
+		.sidebar__toggle{
+			    transform: rotate(180deg);
+		}
+	}
 }
 .sidebar__link{
 	display: block;
@@ -490,9 +495,9 @@
 	top: 10px;
 	//transform: translateY(-50%);
 	transition: all 0.3s ease;
-	&.active{
-		transform: rotate(180deg);
-	}
+	// &.active{
+	// 	transform: rotate(180deg);
+	// }
 }
 
 .sidebar__item--sub{
@@ -1817,8 +1822,8 @@
 	}
 	.shelves-list__title{
 		font-size: 16px;
-		color: #000;
-		pointer-events: none;
+		// color: #000;
+		// pointer-events: none;
 	}
 	.magazine-title{
 	    &:hover{
@@ -3374,6 +3379,10 @@
 	}
 }
 
+.page-form{
+	max-width: 880px;
+}
+
 .uploadbutton{
 	input[type="file"]{
 		opacity: 0;
@@ -3397,9 +3406,15 @@
 		span{
 			color: #337ab7;
 			margin-left: 4px;
+			transition: color 0.3s ease;
 		}
 		&.add{
 			border: 2px solid #c5cbd5;
+		}
+	}
+	&:hover{
+		.button span{
+			color: #f58220;
 		}
 	}
 }
@@ -3777,7 +3792,7 @@
 
 .journal__buttons{
 	width: 135px;
-	margin-right: 41px;
+	margin-right: 34px;
 	.book-nav__link{
 		margin-bottom: 10px;
 		line-height: 1;
@@ -3840,6 +3855,11 @@
 .journal__labels__inner{
 	    display: flex;
     justify-content: flex-end;
+}
+
+.journal-half{
+	display: flex;
+	width: 100%;
 }
 
 /* Accordion responsive breakpoint */
