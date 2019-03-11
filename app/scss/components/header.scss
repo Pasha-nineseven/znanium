@@ -62,10 +62,10 @@
 .top-menu__item--submenu{
     .top-menu__link{
 
+        &:after{
+            display: none;
+        }
         &:hover{
-            &:after{
-                background: transparent;
-            }
         }
     }
     &:hover{

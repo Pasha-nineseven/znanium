@@ -305,6 +305,12 @@ $(document).ready(function() {
 		$(this).toggleClass('active');
 		$(this).parents('.journal__item').find('.journal__info').slideToggle(100);
 	});
+
+
+	//FSTYLER
+    if ($('.fstyler').length>0) {
+    	$('.fstyler').styler();
+    }
 });	
 
 

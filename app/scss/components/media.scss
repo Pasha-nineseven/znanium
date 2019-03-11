@@ -235,7 +235,17 @@
 	.journal .btn {
 	    padding: 3px 19px;
 	}
-
+	.journal__titles{
+		padding-right: 10px;
+	}
+	.journal__titles__item{
+		width: 120px;
+		font-size: 12px;
+		margin-right: 10px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
 }
 
 @media screen and (max-width: 950px){
@@ -1041,6 +1051,9 @@
 	}
 	.journal__total__sum {
 	    font-size: 14px;
+	}
+	.journal__titles{
+		display: none;
 	}
 }
 
