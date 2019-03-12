@@ -7059,7 +7059,9 @@ ul.folder__sub,
     background: url(../img/svg/remove-file-h.svg) no-repeat; }
 
 .page-form {
-  max-width: 880px; }
+  max-width: 880px;
+  position: relative;
+  z-index: 1; }
 
 .uploadbutton input[type="file"] {
   opacity: 0;

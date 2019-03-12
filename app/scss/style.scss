@@ -3410,6 +3410,8 @@ ul.folder__sub,
 
 .page-form{
 	max-width: 880px;
+	position: relative;
+	z-index: 1;
 }
 
 .uploadbutton{
